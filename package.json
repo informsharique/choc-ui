@@ -19,7 +19,7 @@
     "@choc-ui/logo": "^1.0.0",
     "@choc-ui/paginator": "^3.4.0",
     "@emotion/react": "^11.9.0",
-    "@emotion/server": "^11.4.0",
+    "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.8.1",
     "@loadable/component": "^5.15.2",
     "@splitbee/web": "^0.2.4",

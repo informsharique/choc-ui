@@ -1889,7 +1889,7 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.0.0", "@types/react@^18.0.5":
+"@types/react@^18.0.5":
   version "18.0.12"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.12.tgz#cdaa209d0a542b3fcf69cf31a03976ec4cdd8840"
   integrity sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg==
@@ -2005,13 +2005,12 @@
     klona "^2.0.5"
     valtio "^1.6.0"
 
-"@zag-js/dom-utils@^0.1.3":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@zag-js/dom-utils/-/dom-utils-0.1.4.tgz#fae6a046ad7cb1ff554fd122a117454195aa907f"
-  integrity sha512-RlTc/6corfgfiMQmBd6s5jrgoFo2RGLHdwUXBHRS4hDf/MapCEtsnsv5yZWKOTTd2631w5JqI3t01x0zmBZAVA==
+"@zag-js/dom-utils@^0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@zag-js/dom-utils/-/dom-utils-0.1.12.tgz#d26e14b4484d691a653bb30d2817a6f5b2ea5245"
+  integrity sha512-7v1U6a3AeWPVh3wiCwKAgHsnJj2cZuOsEonXtfqdoNYpW9HiQWBqXiOc2R8gtUbg/NgaU6b1TDYDI+k68h9rMg==
   dependencies:
-    "@types/react" "^18.0.0"
-    "@zag-js/utils" "0.1.2"
+    "@zag-js/types" "0.2.6"
 
 "@zag-js/focus-visible@0.1.0":
   version "0.1.0"
@@ -2025,6 +2024,13 @@
   dependencies:
     "@zag-js/core" "0.1.6"
     valtio "^1.6.0"
+
+"@zag-js/types@0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@zag-js/types/-/types-0.2.6.tgz#b258b690f58e4b5b17ddf3dd8d3f6f4698927301"
+  integrity sha512-lIxtjLB75VUFM6Xafv2LacoBxLxY/BJno6aMSGihf64xBdxvolrXNnXhq9lTRsW69y8VhsQcIiuNrOSrSZeE2Q==
+  dependencies:
+    csstype "3.1.0"
 
 "@zag-js/types@^0.1.2":
   version "0.1.2"
@@ -3326,7 +3332,7 @@ css-box-model@1.2.1:
   dependencies:
     tiny-invariant "^1.0.6"
 
-csstype@^3.0.11:
+csstype@3.1.0, csstype@^3.0.11:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==

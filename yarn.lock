@@ -1996,14 +1996,13 @@
   resolved "https://registry.yarnpkg.com/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
 
-"@zag-js/core@0.1.6", "@zag-js/core@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@zag-js/core/-/core-0.1.6.tgz#2714840e803ad7ff4ab081229019192022ff9c0a"
-  integrity sha512-P9C9fpiaOzb8xWxaAUDpc3dUC7h8FRjziMXc6iwCx2ZxCjY5FfVna1X20y94uKzXd1hxRNeoZpZTa8KNiVGG0w==
+"@zag-js/core@0.1.12", "@zag-js/core@^0.1.6":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@zag-js/core/-/core-0.1.12.tgz#f0cd7687b26c55845c9bd55822f0b76b1c3ceee7"
+  integrity sha512-92QVG6O0Txr28PCAIk1FhWrB4BoYc4MJOWxpazqB7PoLz93+sNytCI0cMOEJnLdu0Qy/WvATYiqifuH92Qa1AA==
   dependencies:
-    "@zag-js/utils" "0.1.2"
-    klona "^2.0.5"
-    valtio "^1.6.0"
+    "@zag-js/store" "0.1.4"
+    klona "2.0.5"
 
 "@zag-js/dom-utils@^0.1.3":
   version "0.1.4"
@@ -2018,13 +2017,29 @@
   resolved "https://registry.yarnpkg.com/@zag-js/focus-visible/-/focus-visible-0.1.0.tgz#9777bbaff8316d0b3a14a9095631e1494f69dbc7"
   integrity sha512-PeaBcTmdZWcFf7n1aM+oiOdZc+sy14qi0emPIeUuGMTjbP0xLGrZu43kdpHnWSXy7/r4Ubp/vlg50MCV8+9Isg==
 
-"@zag-js/react@^0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@zag-js/react/-/react-0.1.8.tgz#99fde4ae5792cfc3ab1c23cf53305ebaeb121a8c"
-  integrity sha512-b0nPLEYig5a2V+ZGLcsj3rGbFuakAFJfm+2am+SoonNbSTzFb+l7X2W2eDdF9h/MeKd3oIc3ydLJbhaCdbM6QA==
+"@zag-js/react@^0.1.18":
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/@zag-js/react/-/react-0.1.18.tgz#b723c1fd9beb676cb19323e7e465cfdc68d7cb73"
+  integrity sha512-twH4a0QmbzACXPOj2CUaSB7X8nn3czYwrqMupI5XegeqywoOBBYk+qzQEwbbuaY6sZdRqTtNpeh70POLCZWUCw==
   dependencies:
-    "@zag-js/core" "0.1.6"
-    valtio "^1.6.0"
+    "@zag-js/core" "0.1.12"
+    "@zag-js/store" "0.1.4"
+    "@zag-js/types" "0.2.7"
+    proxy-compare "2.3.0"
+
+"@zag-js/store@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@zag-js/store/-/store-0.1.4.tgz#473dc450e8e630f22f3f1d8d573d4845c7fadef8"
+  integrity sha512-Mq3IwpPvoOzbNqWGcH/t0u7M3IpXTHmU+YeyYmZy8aD+kUrMx8s4IY8fZvnrIgOZrL7Rb45GRrRNpEJfGmTGFg==
+  dependencies:
+    proxy-compare "2.3.0"
+
+"@zag-js/types@0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@zag-js/types/-/types-0.2.7.tgz#8ae259aab593628797cab18a1d4b216952fd1821"
+  integrity sha512-UZn+n6XjPMC9NjZZcXKTDeBJ8ere1xWmKn/JjodIRe5L8xCPw8d288JF3EmXBeZQokmQyQDL5hBXYxpA4tKfRQ==
+  dependencies:
+    csstype "3.1.0"
 
 "@zag-js/types@^0.1.2":
   version "0.1.2"
@@ -3326,7 +3341,7 @@ css-box-model@1.2.1:
   dependencies:
     tiny-invariant "^1.0.6"
 
-csstype@^3.0.11:
+csstype@3.1.0, csstype@^3.0.11:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
@@ -5596,7 +5611,7 @@ klaw-sync@^6.0.0:
   dependencies:
     graceful-fs "^4.1.11"
 
-klona@^2.0.5:
+klona@2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
   integrity sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==
@@ -6857,10 +6872,10 @@ protoduck@^4.0.0:
   dependencies:
     genfun "^4.0.1"
 
-proxy-compare@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/proxy-compare/-/proxy-compare-2.1.0.tgz#5f99b3ed6a265135ce7ec145ce304e6f89b6511b"
-  integrity sha512-wapJ3h/w8fRSyPEG0y2WMV+tf9xwvj3nxM6aHVuPEOwKs/t5xLSKZb44ubNTiqq2T6lmEMHEWGMTaU2L6ddaFA==
+proxy-compare@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/proxy-compare/-/proxy-compare-2.3.0.tgz#ac9633ae52918ff9c9fcc54dfe6316c7a02d20ee"
+  integrity sha512-c3L2CcAi7f7pvlD0D7xsF+2CQIW8C3HaYx2Pfgq8eA4HAl3GAH6/dVYsyBbYF/0XJs2ziGLrzmz5fmzPm6A0pQ==
 
 prr@~1.0.1:
   version "1.0.1"
@@ -8571,11 +8586,6 @@ use-sidecar@^1.1.2:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
 
-use-sync-external-store@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.1.0.tgz#3343c3fe7f7e404db70f8c687adf5c1652d34e82"
-  integrity sha512-SEnieB2FPKEVne66NpXPd1Np4R1lTNKfjuy3XdIoPQKYBAFdzbzSZlSn1KJZUiihQLQC5Znot4SBz1EOTBwQAQ==
-
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
@@ -8619,14 +8629,6 @@ validate-npm-package-name@^3.0.0:
   integrity sha1-X6kS2B630MdK/BQN5zF/DKffQ34=
   dependencies:
     builtins "^1.0.3"
-
-valtio@^1.6.0:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/valtio/-/valtio-1.6.1.tgz#c24e8dcb27e6844e972ef49f22519e029404d650"
-  integrity sha512-caSZhnKNHbsUNQSftEzIeDKFP9Wcmj2c1hrCLWA0vA4eUBu6vxqEPs/cm0ln8umF5L1xbQGppopt79xxELmkAg==
-  dependencies:
-    proxy-compare "2.1.0"
-    use-sync-external-store "1.1.0"
 
 vlq@^1.0.0:
   version "1.0.1"

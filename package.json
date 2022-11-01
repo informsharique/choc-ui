@@ -26,7 +26,7 @@
     "@visx/hierarchy": "^2.1.2",
     "@visx/responsive": "^2.10.0",
     "@zag-js/core": "^0.1.6",
-    "@zag-js/dom-utils": "^0.1.3",
+    "@zag-js/dom-utils": "^0.1.13",
     "@zag-js/react": "^0.1.8",
     "@zag-js/types": "^0.1.2",
     "codesandbox": "^2.2.3",

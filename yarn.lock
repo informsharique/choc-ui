@@ -1889,7 +1889,7 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.0.0", "@types/react@^18.0.5":
+"@types/react@^18.0.5":
   version "18.0.12"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.12.tgz#cdaa209d0a542b3fcf69cf31a03976ec4cdd8840"
   integrity sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg==
@@ -2005,13 +2005,12 @@
     klona "^2.0.5"
     valtio "^1.6.0"
 
-"@zag-js/dom-utils@^0.1.3":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@zag-js/dom-utils/-/dom-utils-0.1.4.tgz#fae6a046ad7cb1ff554fd122a117454195aa907f"
-  integrity sha512-RlTc/6corfgfiMQmBd6s5jrgoFo2RGLHdwUXBHRS4hDf/MapCEtsnsv5yZWKOTTd2631w5JqI3t01x0zmBZAVA==
+"@zag-js/dom-utils@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/dom-utils/-/dom-utils-0.2.2.tgz#62123782fe0351ccb059ab906862ec5cf0741b82"
+  integrity sha512-R0N5sYqe5nx4pOGSgmBIRoJ7KrIHMjvE0rVE5hRVohEVWMxVJRt+BaDyNJ8a4jpnlr71S/dKVVfiCPTDIuIvfA==
   dependencies:
-    "@types/react" "^18.0.0"
-    "@zag-js/utils" "0.1.2"
+    "@zag-js/types" "0.3.2"
 
 "@zag-js/focus-visible@0.1.0":
   version "0.1.0"
@@ -2025,6 +2024,13 @@
   dependencies:
     "@zag-js/core" "0.1.6"
     valtio "^1.6.0"
+
+"@zag-js/types@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@zag-js/types/-/types-0.3.2.tgz#6edc9fdeb0453facd8e0a1f2337821379cfa4105"
+  integrity sha512-ADOFgW8vccD4h94nBGJZdzM5GVKK/lAssL7HH+hTo+tiWczOEbPT20p2/YSBz5Xy7QpEIdQB6bZ373f0h1FaSQ==
+  dependencies:
+    csstype "3.1.1"
 
 "@zag-js/types@^0.1.2":
   version "0.1.2"
@@ -3325,6 +3331,11 @@ css-box-model@1.2.1:
   integrity sha512-a7Vr4Q/kd/aw96bnJG332W9V9LkJO69JRcaCYDUqjp6/z0w6VcZjgAcTbgFxEPfBgdnAwlh3iwu+hLopa+flJw==
   dependencies:
     tiny-invariant "^1.0.6"
+
+csstype@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
+  integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
 csstype@^3.0.11:
   version "3.1.0"

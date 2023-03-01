@@ -1996,7 +1996,15 @@
   resolved "https://registry.yarnpkg.com/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
 
-"@zag-js/core@0.1.6", "@zag-js/core@^0.1.6":
+"@zag-js/core@0.2.10":
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/@zag-js/core/-/core-0.2.10.tgz#713829fd47613661d3b58a3192397df313b95687"
+  integrity sha512-Hc8a8KF+5VpSlLkeKFqFTRvlBtBOL+yjUEy0/pD5jTOPOwKyEHz+Yt/nCaGW5L3rzNkALpiAfrKHkXdhYKNOVg==
+  dependencies:
+    "@zag-js/store" "0.2.8"
+    klona "2.0.6"
+
+"@zag-js/core@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@zag-js/core/-/core-0.1.6.tgz#2714840e803ad7ff4ab081229019192022ff9c0a"
   integrity sha512-P9C9fpiaOzb8xWxaAUDpc3dUC7h8FRjziMXc6iwCx2ZxCjY5FfVna1X20y94uKzXd1hxRNeoZpZTa8KNiVGG0w==
@@ -2018,13 +2026,29 @@
   resolved "https://registry.yarnpkg.com/@zag-js/focus-visible/-/focus-visible-0.1.0.tgz#9777bbaff8316d0b3a14a9095631e1494f69dbc7"
   integrity sha512-PeaBcTmdZWcFf7n1aM+oiOdZc+sy14qi0emPIeUuGMTjbP0xLGrZu43kdpHnWSXy7/r4Ubp/vlg50MCV8+9Isg==
 
-"@zag-js/react@^0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@zag-js/react/-/react-0.1.8.tgz#99fde4ae5792cfc3ab1c23cf53305ebaeb121a8c"
-  integrity sha512-b0nPLEYig5a2V+ZGLcsj3rGbFuakAFJfm+2am+SoonNbSTzFb+l7X2W2eDdF9h/MeKd3oIc3ydLJbhaCdbM6QA==
+"@zag-js/react@^0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@zag-js/react/-/react-0.3.10.tgz#79fe0b5fa26e2ad3278e8be7567386b064c87a7d"
+  integrity sha512-H/Yb0bpyZDiio4EXN76Huns00qzTAjfnaizo9j4B19E6iFXkA0XZ3acMrc2IQmUKtA6MPs5Xn2c2HZFkGKqeDQ==
   dependencies:
-    "@zag-js/core" "0.1.6"
-    valtio "^1.6.0"
+    "@zag-js/core" "0.2.10"
+    "@zag-js/store" "0.2.8"
+    "@zag-js/types" "0.3.4"
+    proxy-compare "2.5.0"
+
+"@zag-js/store@0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@zag-js/store/-/store-0.2.8.tgz#b7b477c56e688043ed3f1c7a8ebb12cb6e994639"
+  integrity sha512-QgBnbYjb5jvcTt0+JCoPJ9YKM9vP1/RR78mkT6fWCIM0N8hnZu4MzQPVKxiopxZ8XIrDbUjFWlJLzL83uiYv2g==
+  dependencies:
+    proxy-compare "2.5.0"
+
+"@zag-js/types@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@zag-js/types/-/types-0.3.4.tgz#9443590d80d4bad8861fcee1e0b1939611964c5c"
+  integrity sha512-KkZOMNqFZA0TaVF70O6WIRJPWTcDyRQjhXLDkLVfo99gwJdsC1bMZWfjrCiR8g1CfzvCyGNSWzdArIgzTJVEMA==
+  dependencies:
+    csstype "3.1.1"
 
 "@zag-js/types@^0.1.2":
   version "0.1.2"
@@ -3325,6 +3349,11 @@ css-box-model@1.2.1:
   integrity sha512-a7Vr4Q/kd/aw96bnJG332W9V9LkJO69JRcaCYDUqjp6/z0w6VcZjgAcTbgFxEPfBgdnAwlh3iwu+hLopa+flJw==
   dependencies:
     tiny-invariant "^1.0.6"
+
+csstype@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
+  integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
 csstype@^3.0.11:
   version "3.1.0"
@@ -5596,6 +5625,11 @@ klaw-sync@^6.0.0:
   dependencies:
     graceful-fs "^4.1.11"
 
+klona@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
+  integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
+
 klona@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
@@ -6861,6 +6895,11 @@ proxy-compare@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/proxy-compare/-/proxy-compare-2.1.0.tgz#5f99b3ed6a265135ce7ec145ce304e6f89b6511b"
   integrity sha512-wapJ3h/w8fRSyPEG0y2WMV+tf9xwvj3nxM6aHVuPEOwKs/t5xLSKZb44ubNTiqq2T6lmEMHEWGMTaU2L6ddaFA==
+
+proxy-compare@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/proxy-compare/-/proxy-compare-2.5.0.tgz#0387c5e4d283ba9b1c0353bb20def4449b06bbd2"
+  integrity sha512-f1us0OsVAJ3tdIMXGQx2lmseYS4YXe4W+sKF5g5ww/jV+5ogMadPt+sIZ+88Ga9kvMJsrRNWzCrKPpr6pMWYbA==
 
 prr@~1.0.1:
   version "1.0.1"
